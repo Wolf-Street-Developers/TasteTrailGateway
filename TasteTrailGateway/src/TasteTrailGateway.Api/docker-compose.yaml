@@ -6,7 +6,7 @@ services:
     image: gateway
     build:
       context: .
-      dockerfile: ./TasteTrailGateway/src/TasteTrailGateway.Api/Dockerfile
+      dockerfile: Dockerfile
     container_name: gateway_container
     environment:
       ASPNETCORE_URLS: http://+:80
