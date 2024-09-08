@@ -42,7 +42,7 @@ jobs:
           password: ${{secrets.DOCKERHUB_TOKEN}}
 
       - name: Build Image
-        run: docker build -f TasteTrailGateway/src/TasteTrailGateway.Api/Dockerfile -t ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.IMAGE_NAME}}:latest TasteTrailGateway/src/TasteTrailGateway.Api
+        run: docker build -f ./TasteTrailGateway/src/TasteTrailGateway.Api/Dockerfile -t ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.IMAGE_NAME}}:latest .
 
       - name: Push Image
         run: docker push ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.IMAGE_NAME}}:latest
