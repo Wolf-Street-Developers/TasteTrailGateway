@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  gateway:
+    image: gateway
+    build:
+      context: .
+      dockerfile: ./TasteTrailGateway/src/TasteTrailGateway.Api/Dockerfile
+    container_name: gateway_container
+    environment:
+      ASPNETCORE_URLS: http://+:80
+    ports:
+      - 5000:80
+    restart: always
+
