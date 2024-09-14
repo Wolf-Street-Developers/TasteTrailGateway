@@ -206,7 +206,11 @@
               }
             ],
             "UpstreamPathTemplate": "/api/MenuItem/SetImage",
-            "UpstreamHttpMethod": [ "POST" ]
+            "UpstreamHttpMethod": [ "POST" ],
+
+            "AddQueryParamsToRequest": {
+              "menuItemId": "{menuItemId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/MenuItem/DeleteById",
@@ -218,7 +222,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/MenuItem/DeleteById",
-            "UpstreamHttpMethod": [ "DELETE" ]
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "AddQueryParamsToRequest": {
+              "menuItemId": "{menuItemId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/MenuItem/DeleteImage",
@@ -230,7 +237,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/MenuItem/DeleteImage",
-            "UpstreamHttpMethod": [ "DELETE" ]
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "AddQueryParamsToRequest": {
+              "menuItemId": "{menuItemId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/MenuItem/Update",
@@ -267,7 +277,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/Menu/SetImage",
-            "UpstreamHttpMethod": [ "POST" ]
+            "UpstreamHttpMethod": [ "POST" ],
+            "AddQueryParamsToRequest": {
+              "menuId": "{menuId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/Menu/DeleteById",
@@ -279,7 +292,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/Menu/DeleteById",
-            "UpstreamHttpMethod": [ "DELETE" ]
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "AddQueryParamsToRequest": {
+              "menuId": "{menuId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/Menu/DeleteImage",
@@ -291,7 +307,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/Menu/DeleteImage",
-            "UpstreamHttpMethod": [ "DELETE" ]
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "AddQueryParamsToRequest": {
+              "menuId": "{menuId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/Menu/Update",
@@ -328,7 +347,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/Venue/SetImage",
-            "UpstreamHttpMethod": [ "POST" ]
+            "UpstreamHttpMethod": [ "POST" ],
+            "AddQueryParamsToRequest": {
+              "venueId": "{venueId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/Venue/DeleteById",
@@ -340,7 +362,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/Venue/DeleteById",
-            "UpstreamHttpMethod": [ "DELETE" ]
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "AddQueryParamsToRequest": {
+              "venueId": "{venueId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/Venue/DeleteImage",
@@ -352,7 +377,10 @@
               }
             ],
             "UpstreamPathTemplate": "/api/Venue/DeleteImage",
-            "UpstreamHttpMethod": [ "DELETE" ]
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "AddQueryParamsToRequest": {
+              "venueId": "{venueId}"
+            }
           },
           {
             "DownstreamPathTemplate": "/api/Venue/Update",
