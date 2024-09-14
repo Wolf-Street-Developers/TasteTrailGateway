@@ -402,8 +402,13 @@
             "Port": 5000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/AssignRole",
-        "UpstreamHttpMethod": [ "POST" ]
+        "UpstreamPathTemplate": "/api/AdminPanel/AssignRole/{everything}",
+        "UpstreamHttpMethod": [ "POST" ],
+
+        "AddQueryParamsToRequest": {
+          "userId": "{userId}",
+          "role": "{role}"
+        }
       },
       {
         "DownstreamPathTemplate": "/api/AdminPanel/RemoveRole",
@@ -415,7 +420,11 @@
           }
         ],
         "UpstreamPathTemplate": "/api/AdminPanel/RemoveRole",
-        "UpstreamHttpMethod": [ "POST" ]
+        "UpstreamHttpMethod": [ "POST" ],
+        "AddQueryParamsToRequest": {
+          "userId": "{userId}",
+          "role": "{role}"
+        }
       },
       {
         "DownstreamPathTemplate": "/api/AdminPanel/ToggleMute/{userId}",
@@ -525,7 +534,11 @@
           }
         ],
         "UpstreamPathTemplate": "/api/User",
-        "UpstreamHttpMethod": [ "PUT" ]
+        "UpstreamHttpMethod": [ "PUT" ],
+
+        "AddQueryParamsToRequest": {
+          "refresh": "{refresh}"
+        }
       },
       {
         "DownstreamPathTemplate": "/api/User/Avatar",
