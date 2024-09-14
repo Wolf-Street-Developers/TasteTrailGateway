@@ -25,7 +25,7 @@
             "UpstreamHttpMethod": [ "POST" ]
         },
         {
-            "DownstreamPathTemplate": "/api/Feedback/GetById/{id}",
+            "DownstreamPathTemplate": "/api/Feedback/GetById/{everything}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
             {
@@ -33,7 +33,7 @@
                 "Port": 7000
             }
             ],
-            "UpstreamPathTemplate": "/api/Feedback/GetById/{id}",
+            "UpstreamPathTemplate": "/api/Feedback/GetById/{everything}",
             "UpstreamHttpMethod": [ "GET" ]
         },
         {
