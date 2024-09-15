@@ -1,669 +1,290 @@
 {
     "Routes": [
-        {
-            "DownstreamPathTemplate": "/api/Feedback/GetFiltered/{venueId}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Feedback/GetFiltered/{venueId}",
-            "UpstreamHttpMethod": [ "POST" ],
-            "AddQueryParamsToRequest": {
-              "venueId": "{venueId}"
-            }
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/Feedback/GetFiltered",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Feedback/GetFiltered",
-            "UpstreamHttpMethod": [ "POST" ]
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/Feedback/GetById/{id}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Feedback/GetById/{everything}",
-            "UpstreamHttpMethod": [ "GET" ],
-            "AddQueryParamsToRequest": {
-              "id": "{id}"
-            }
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/Feedback/GetCount",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Feedback/GetCount",
-            "UpstreamHttpMethod": [ "GET" ]
-        },
-
-        {
-          "DownstreamPathTemplate": "/api/Feedback/Create",
-          "DownstreamScheme": "http",
-          "DownstreamHostAndPorts": [
-          {
-              "Host": "20.199.20.212",
-              "Port": 7000
-          }
-          ],
-          "UpstreamPathTemplate": "/api/Feedback/Create",
-          "UpstreamHttpMethod": [ "POST" ]
-        },
-
-        {
-          "DownstreamPathTemplate": "/api/Feedback/DeleteById/{id}",
-          "DownstreamScheme": "http",
-          "DownstreamHostAndPorts": [
-          {
-              "Host": "20.199.20.212",
-              "Port": 7000
-          }
-          ],
-          "UpstreamPathTemplate": "/api/Feedback/DeleteById",
-          "UpstreamHttpMethod": [ "DELETE" ],
-          "AddQueryParamsToRequest": {
-            "id": "{id}"
-          }
-        },
-
-
-        {
-            "DownstreamPathTemplate": "/api/MenuItemLike/Create",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItemLike/Create",
-            "UpstreamHttpMethod": [ "POST" ]
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/MenuItemLike/DeleteByMenuItemId/{menuItemId}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItemLike/DeleteByMenuItemId/{menuItemId}",
-            "UpstreamHttpMethod": [ "DELETE" ],
-            "AddQueryParamsToRequest": {
-              "menuItemId": "{menuItemId}"
-            }
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/MenuItem/GetFiltered/{menuId}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/GetFiltered/{menuId}",
-            "UpstreamHttpMethod": [ "POST" ],
-            "AddQueryParamsToRequest": {
-              "menuId": "{menuId}"
-            }
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/MenuItem/GetFiltered",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/GetFiltered",
-            "UpstreamHttpMethod": [ "POST" ]
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/MenuItem/GetById/{id}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/GetById/{id}",
-            "UpstreamHttpMethod": [ "GET" ],
-            "AddQueryParamsToRequest": {
-              "id": "{id}"
-            }
-        },
-
-
-
-        {
-            "DownstreamPathTemplate": "/api/Menu/GetFiltered/{venueId}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/GetFiltered/{venueId}",
-            "UpstreamHttpMethod": [ "POST" ],
-            "AddQueryParamsToRequest": {
-              "venueId": "{venueId}"
-            }
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/Menu/GetFiltered",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/GetFiltered",
-            "UpstreamHttpMethod": [ "POST" ]
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/Menu/GetById/{id}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/GetById/{id}",
-            "UpstreamHttpMethod": [ "GET" ],
-            "AddQueryParamsToRequest": {
-              "id": "{id}"
-            }
-        },
-
-
-
-        {
-            "DownstreamPathTemplate": "/api/Venue/GetFiltered",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/GetFiltered",
-            "UpstreamHttpMethod": [ "POST" ]
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/Venue/GetById/{id}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/GetById/{id}",
-            "UpstreamHttpMethod": [ "GET" ],
-            "AddQueryParamsToRequest": {
-              "id": "{id}"
-            }
-        },
-
-        {
-            "DownstreamPathTemplate": "/api/Venue/GetCount",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-            {
-                "Host": "20.199.20.212",
-                "Port": 7000
-            }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/GetCount",
-            "UpstreamHttpMethod": [ "GET" ]
-        },
-
-
-        
-
-        {
-            "DownstreamPathTemplate": "/api/MenuItem/Create",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/Create",
-            "UpstreamHttpMethod": [ "POST" ]
-          },
-          {
-            "DownstreamPathTemplate": "/api/MenuItem/SetImage",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/SetImage",
-            "UpstreamHttpMethod": [ "POST" ],
-
-            "AddQueryParamsToRequest": {
-              "menuItemId": "{menuItemId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/MenuItem/DeleteById",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/DeleteById",
-            "UpstreamHttpMethod": [ "DELETE" ],
-            "AddQueryParamsToRequest": {
-              "menuItemId": "{menuItemId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/MenuItem/DeleteImage",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/DeleteImage",
-            "UpstreamHttpMethod": [ "DELETE" ],
-            "AddQueryParamsToRequest": {
-              "menuItemId": "{menuItemId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/MenuItem/Update",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/MenuItem/Update",
-            "UpstreamHttpMethod": [ "PUT" ]
-          },
-          
-          {
-            "DownstreamPathTemplate": "/api/Menu/Create",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/Create",
-            "UpstreamHttpMethod": [ "POST" ]
-          },
-          {
-            "DownstreamPathTemplate": "/api/Menu/SetImage",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/SetImage",
-            "UpstreamHttpMethod": [ "POST" ],
-            "AddQueryParamsToRequest": {
-              "menuId": "{menuId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/Menu/DeleteById",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/DeleteById",
-            "UpstreamHttpMethod": [ "DELETE" ],
-            "AddQueryParamsToRequest": {
-              "menuId": "{menuId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/Menu/DeleteImage",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/DeleteImage",
-            "UpstreamHttpMethod": [ "DELETE" ],
-            "AddQueryParamsToRequest": {
-              "menuId": "{menuId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/Menu/Update",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Menu/Update",
-            "UpstreamHttpMethod": [ "PUT" ]
-          },
-          
-          {
-            "DownstreamPathTemplate": "/api/Venue/Create",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/Create",
-            "UpstreamHttpMethod": [ "POST" ]
-          },
-          {
-            "DownstreamPathTemplate": "/api/Venue/SetImage",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/SetImage",
-            "UpstreamHttpMethod": [ "POST" ],
-            "AddQueryParamsToRequest": {
-              "venueId": "{venueId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/Venue/DeleteById",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/DeleteById",
-            "UpstreamHttpMethod": [ "DELETE" ],
-            "AddQueryParamsToRequest": {
-              "venueId": "{venueId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/Venue/DeleteImage",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/DeleteImage",
-            "UpstreamHttpMethod": [ "DELETE" ],
-            "AddQueryParamsToRequest": {
-              "venueId": "{venueId}"
-            }
-          },
-          {
-            "DownstreamPathTemplate": "/api/Venue/Update",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "48.209.9.2",
-                "Port": 5000
-              }
-            ],
-            "UpstreamPathTemplate": "/api/Venue/Update",
-            "UpstreamHttpMethod": [ "PUT" ]
-          },
-
-
-
       {
-        "DownstreamPathTemplate": "/api/AdminPanel/User/Count",
+        "DownstreamPathTemplate": "/api/FeedbackLike",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "135.236.238.56",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/User/Count",
+        "UpstreamPathTemplate": "/api/FeedbackLike",
         "UpstreamHttpMethod": [ "POST" ]
       },
+
       {
-        "DownstreamPathTemplate": "/api/AdminPanel/UserFilter",
+        "DownstreamPathTemplate": "/api/FeedbackLike/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "135.236.238.56",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/UserFilter",
+        "UpstreamPathTemplate": "/api/FeedbackLike/{id}",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+
+      
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItemLike",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItemLike",
         "UpstreamHttpMethod": [ "POST" ]
       },
+
       {
-        "DownstreamPathTemplate": "/api/AdminPanel/AssignRole",
+        "DownstreamPathTemplate": "/api/MenuItemLike/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "135.236.238.56",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/AssignRole/{everything}",
-        "UpstreamHttpMethod": [ "POST" ],
+        "UpstreamPathTemplate": "/api/MenuItemLike/{id}",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+
+
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItem/GetFiltered/{menuId}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItem/GetFiltered/{menuId}",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItem/GetFiltered",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItem/GetFiltered",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItem/GetById/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItem/GetById/{id}",
+        "UpstreamHttpMethod": [ "GET" ],
 
         "AddQueryParamsToRequest": {
-          "userId": "{userId}",
-          "role": "{role}"
+              "id": "{id}"
         }
       },
+
+      
+
+
       {
-        "DownstreamPathTemplate": "/api/AdminPanel/RemoveRole",
+        "DownstreamPathTemplate": "/api/Menu/GetFiltered/{venueId}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "135.236.238.56",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/RemoveRole",
-        "UpstreamHttpMethod": [ "POST" ],
+        "UpstreamPathTemplate": "/api/Menu/GetFiltered/{venueId}",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Menu/GetFiltered",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Menu/GetFiltered",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Menu/GetById/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Menu/GetById/{id}",
+        "UpstreamHttpMethod": [ "GET" ],
+
         "AddQueryParamsToRequest": {
-          "userId": "{userId}",
-          "role": "{role}"
+              "id": "{id}"
         }
       },
+
+
+
+    
+
       {
-        "DownstreamPathTemplate": "/api/AdminPanel/ToggleMute/{userId}",
+        "DownstreamPathTemplate": "/api/Venue/GetFiltered",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "135.236.238.56",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/ToggleMute/{userId}",
+        "UpstreamPathTemplate": "/api/Venue/GetFiltered",
         "UpstreamHttpMethod": [ "POST" ]
       },
+
       {
-        "DownstreamPathTemplate": "/api/AdminPanel/ToggleBan/{userId}",
+        "DownstreamPathTemplate": "/api/Venue/GetById/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "135.236.238.56",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/ToggleBan/{userId}",
-        "UpstreamHttpMethod": [ "POST" ]
+        "UpstreamPathTemplate": "/api/Venue/GetById/{id}",
+        "UpstreamHttpMethod": [ "GET" ],
+
+        "AddQueryParamsToRequest": {
+              "id": "{id}"
+        }
       },
+
       {
-        "DownstreamPathTemplate": "/api/AdminPanel/UserInfo/{userId}",
+        "DownstreamPathTemplate": "/api/Venue/GetCount",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "135.236.238.56",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/AdminPanel/UserInfo/{userId}",
+        "UpstreamPathTemplate": "/api/Venue/GetCount",
         "UpstreamHttpMethod": [ "GET" ]
       },
 
 
+
+
+
       {
-        "DownstreamPathTemplate": "/api/Authentication/Login",
+        "DownstreamPathTemplate": "/api/Feedback/GetFiltered/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "20.123.63.95",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/Authentication/Login",
+        "UpstreamPathTemplate": "/api/Feedback/GetFiltered/{id}",
         "UpstreamHttpMethod": [ "POST" ]
       },
+
       {
-        "DownstreamPathTemplate": "/api/Authentication/Registration",
+        "DownstreamPathTemplate": "/api/Feedback/GetFiltered",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "20.123.63.95",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/Authentication/Registration",
+        "UpstreamPathTemplate": "/api/Feedback/GetFiltered",
         "UpstreamHttpMethod": [ "POST" ]
       },
+
       {
-        "DownstreamPathTemplate": "/api/Authentication/Logout",
+        "DownstreamPathTemplate": "/api/Feedback/GetById/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "20.123.63.95",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/Authentication/Logout",
-        "UpstreamHttpMethod": [ "PATCH" ]
+        "UpstreamPathTemplate": "/api/Feedback/GetById/{id}",
+        "UpstreamHttpMethod": [ "GET" ]
       },
+
       {
-        "DownstreamPathTemplate": "/api/Authentication/UpdateToken",
+        "DownstreamPathTemplate": "/api/Feedback/GetCount",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "20.123.63.95",
-            "Port": 5000
+            "Host": "20.199.20.212",
+            "Port": 7000
           }
         ],
-        "UpstreamPathTemplate": "/api/Authentication/UpdateToken",
+        "UpstreamPathTemplate": "/api/Feedback/GetCount",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/Create",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/Create",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/DeleteById/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/DeleteById/{id}",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+      
+      {
+        "DownstreamPathTemplate": "/api/Feedback/Update",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.199.20.212",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/Update",
         "UpstreamHttpMethod": [ "PUT" ]
-      },
-      {
-        "DownstreamPathTemplate": "/api/User/GetUserRoles",
-        "DownstreamScheme": "http",
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "20.123.63.95",
-            "Port": 5000
-          }
-        ],
-        "UpstreamPathTemplate": "/api/User/GetUserRoles",
-        "UpstreamHttpMethod": [ "GET" ]
-      },
-      {
-        "DownstreamPathTemplate": "/api/User",
-        "DownstreamScheme": "http",
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "20.123.63.95",
-            "Port": 5000
-          }
-        ],
-        "UpstreamPathTemplate": "/api/User",
-        "UpstreamHttpMethod": [ "PUT" ],
-
-        "AddQueryParamsToRequest": {
-          "refresh": "{refresh}"
-        }
-      },
-      {
-        "DownstreamPathTemplate": "/api/User/Avatar",
-        "DownstreamScheme": "http",
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "20.123.63.95",
-            "Port": 5000
-          }
-        ],
-        "UpstreamPathTemplate": "/api/User/Avatar",
-        "UpstreamHttpMethod": [ "PATCH" ]
-      },
-      {
-        "DownstreamPathTemplate": "/api/User/Avatar/{userId}",
-        "DownstreamScheme": "http",
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "20.123.63.95",
-            "Port": 5000
-          }
-        ],
-        "UpstreamPathTemplate": "/api/User/Avatar/{userId}",
-        "UpstreamHttpMethod": [ "GET" ]
       }
     ]
-  }
-  
+}
