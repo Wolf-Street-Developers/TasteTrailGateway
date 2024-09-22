@@ -8,13 +8,13 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll",
         builder =>
         {
-            builder.AllowAnyOrigin()  // Разрешить всем источникам
-                   .AllowAnyMethod()  // Разрешить все HTTP методы
-                   .AllowAnyHeader(); // Разрешить любые заголовки
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
         });
 });
 
-builder.Configuration.AddJsonFile("ocelot.json", false, reloadOnChange: true);
+builder.Configuration.AddJsonFile("./Configuration/UserExperience.json", false, reloadOnChange: true);
 builder.Services.AddOcelot();
 
 builder.Services.AddEndpointsApiExplorer();

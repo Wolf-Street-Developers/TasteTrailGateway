@@ -1,0 +1,94 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/Feedback/GetFilteredByVenue",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/GetFilteredByVenue",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/GetFiltered",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/GetFiltered",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/GetById/{feedbackId}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/GetById/{feedbackId}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/GetCount",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/GetCount",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/Create",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/Create",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/DeleteById",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/DeleteById",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Feedback/Update",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Feedback/Update",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      }
+    ]
+  }
