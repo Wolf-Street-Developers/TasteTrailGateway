@@ -88,7 +88,204 @@
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/Update",
+        "UpstreamHttpMethod": [ "PUT" ]
+      },
+
+
+
+
+
+
+
+      {
+        "DownstreamPathTemplate": "/api/FeedbackLike",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/FeedbackLike",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/FeedbackLike",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/FeedbackLike",
         "UpstreamHttpMethod": [ "DELETE" ]
+      },
+
+
+
+
+
+      {
+        "DownstreamPathTemplate": "/api/Menu/GetFilteredByVenue",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Menu/GetFilteredByVenue",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Menu/GetFiltered",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Menu/GetFiltered",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+      
+      {
+        "DownstreamPathTemplate": "/api/Menu/GetById/{menuId}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Menu/GetById/{menuId}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+
+
+
+
+
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItem/GetFilteredByMenu",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItem/GetFilteredByMenu",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItem/GetFiltered",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItem/GetFiltered",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+      
+      {
+        "DownstreamPathTemplate": "/api/MenuItem/GetById/{menuItemId}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItem/GetById/{menuItemId}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+
+
+
+
+
+
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItemLike",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItemLike",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/MenuItemLike",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/MenuItemLike",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+
+
+
+
+
+
+
+
+      {
+        "DownstreamPathTemplate": "/api/Venue/GetFiltered",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Venue/GetFiltered",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Venue/GetById/{venueId}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Venue/GetById/{venueId}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Venue/GetCount",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "40.67.193.169",
+            "Port": 7000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Venue/GetCount",
+        "UpstreamHttpMethod": [ "GET" ]
       }
     ]
   }
