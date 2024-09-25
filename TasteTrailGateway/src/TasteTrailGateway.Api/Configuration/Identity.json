@@ -1,0 +1,123 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/Authentication/Login",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Authentication/Login",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Authentication/Registration",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Authentication/Registration",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Authentication/Logout",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Authentication/Logout",
+        "UpstreamHttpMethod": [ "PATCH" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/Authentication/UpdateToken",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/Authentication/UpdateToken",
+        "UpstreamHttpMethod": [ "PUT" ]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {
+        "DownstreamPathTemplate": "/api/User/GetUserRoles",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/User/GetUserRoles",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/User",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/User",
+        "UpstreamHttpMethod": [ "PUT" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/User/Avatar",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/User/Avatar",
+        "UpstreamHttpMethod": [ "PATCH" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/User/Avatar",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "20.123.63.95",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/User/Avatar",
+        "UpstreamHttpMethod": [ "GET" ]
+      }
+    ]
+}

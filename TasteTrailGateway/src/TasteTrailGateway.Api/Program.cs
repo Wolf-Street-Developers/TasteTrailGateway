@@ -16,6 +16,8 @@ builder.Services.AddCors(options =>
 
 builder.Configuration.AddJsonFile("./Configuration/UserExperience.json", false, reloadOnChange: true);
 builder.Configuration.AddJsonFile("./Configuration/OwnerExperience.json", false, reloadOnChange: true);
+builder.Configuration.AddJsonFile("./Configuration/AdminDashboard.json", false, reloadOnChange: true);
+builder.Configuration.AddJsonFile("./Configuration/Identity.json", false, reloadOnChange: true);
 builder.Services.AddOcelot();
 
 builder.Services.AddEndpointsApiExplorer();

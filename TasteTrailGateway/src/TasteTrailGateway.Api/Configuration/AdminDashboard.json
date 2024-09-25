@@ -1,0 +1,94 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/AdminDashboard/User/Count",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "135.236.238.56",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/AdminDashboard/User/Count",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/AdminDashboard/UserFilter",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "135.236.238.56",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/AdminDashboard/UserFilter",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/AdminDashboard/AssignRole",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "135.236.238.56",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/AdminDashboard/AssignRole",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/AdminDashboard/RemoveRole",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "135.236.238.56",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/AdminDashboard/RemoveRole",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/AdminDashboard/ToggleMute",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "135.236.238.56",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/AdminDashboard/ToggleMute",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/AdminDashboard/ToggleBan",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "135.236.238.56",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/AdminDashboard/ToggleBan",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+
+      {
+        "DownstreamPathTemplate": "/api/AdminDashboard/UserInfo",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "135.236.238.56",
+            "Port": 5000
+          }
+        ],
+        "UpstreamPathTemplate": "/api/AdminDashboard/UserInfo",
+        "UpstreamHttpMethod": [ "GET" ]
+      }
+    ]
+}
