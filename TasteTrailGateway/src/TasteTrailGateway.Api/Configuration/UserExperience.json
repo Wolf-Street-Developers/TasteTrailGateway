@@ -5,8 +5,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/GetFilteredByVenue",
@@ -18,8 +18,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/GetFiltered",
@@ -31,8 +31,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/GetById/{feedbackId}",
@@ -44,8 +44,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/GetCount",
@@ -57,8 +57,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/Create",
@@ -70,8 +70,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/DeleteById",
@@ -83,8 +83,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Feedback/Update",
@@ -102,8 +102,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/FeedbackLike",
@@ -115,8 +115,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/FeedbackLike",
@@ -132,8 +132,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/GetFilteredByVenue",
@@ -145,8 +145,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/GetFiltered",
@@ -158,8 +158,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/GetById/{menuId}",
@@ -176,8 +176,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/GetFilteredByMenu",
@@ -189,8 +189,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/GetFiltered",
@@ -202,8 +202,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/GetById/{menuItemId}",
@@ -221,8 +221,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItemLike",
@@ -234,8 +234,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItemLike",
@@ -254,8 +254,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/GetFiltered",
@@ -267,8 +267,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/GetById/{venueId}",
@@ -280,8 +280,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.193.169",
-            "Port": 7000
+            "Host": "135.236.96.117",
+            "Port": 9001
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/GetCount",

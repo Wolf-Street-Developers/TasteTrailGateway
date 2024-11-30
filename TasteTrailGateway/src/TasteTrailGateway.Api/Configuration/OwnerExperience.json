@@ -5,8 +5,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/Create",
@@ -18,8 +18,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/SetImage",
@@ -31,8 +31,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/DeleteById",
@@ -44,8 +44,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/DeleteImage",
@@ -57,8 +57,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Menu/Update",
@@ -83,8 +83,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/Create",
@@ -96,8 +96,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/SetImage",
@@ -109,8 +109,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/DeleteById",
@@ -122,8 +122,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/DeleteImage",
@@ -135,8 +135,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/MenuItem/Update",
@@ -159,8 +159,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/Create",
@@ -172,8 +172,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/SetImage",
@@ -185,8 +185,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/DeleteById",
@@ -198,8 +198,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/DeleteImage",
@@ -211,8 +211,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "40.67.192.6",
-            "Port": 5000
+            "Host": "135.236.96.117",
+            "Port": 8000
           }
         ],
         "UpstreamPathTemplate": "/api/Venue/Update",
