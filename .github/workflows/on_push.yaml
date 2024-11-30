@@ -2,6 +2,9 @@ name: Restore, Build, Test and Deploy dotnet TasteTrailGateway app
 
 on:
   push:
+    branches:
+      - main 
+  workflow_dispatch:
 
 jobs:
   restore_build_test:
@@ -42,7 +45,7 @@ jobs:
           password: ${{secrets.DOCKERHUB_TOKEN}}
 
       - name: Build Image
-        run: docker build -f ./app.Dockerfile -t ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.IMAGE_NAME}}:latest . 
+        run: docker build -f ./app.Dockerfile -t ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.IMAGE_NAME}}:latest .    
 
       - name: Push Image
         run: docker push ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.IMAGE_NAME}}:latest
@@ -55,6 +58,6 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /home/azureuser/TasteTrailGateway
-            sudo docker compose pull
-            sudo docker compose down
-            sudo docker compose up -d
+            echo "${{ secrets.SSH_PASSWORD }}" | sudo -S docker compose pull
+            echo "${{ secrets.SSH_PASSWORD }}" | sudo -S docker compose down
+            echo "${{ secrets.SSH_PASSWORD }}" | sudo -S docker compose up -d
